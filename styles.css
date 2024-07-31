@@ -22,7 +22,7 @@ body {
 
 h1 {
     font-size: 1.5em;
-    margin-bottom: 20px;
+    margin-bottom: 40px; /* Increased space for better button placement */
 }
 
 button {
@@ -40,15 +40,17 @@ button {
 
 #no-btn {
     position: absolute;
-    top: 70px;
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
 }
 
 #yes-btn {
-    position: relative;
+    position: absolute;
+    top: 170px; /* Positioned below the "No" button */
+    left: 50%;
+    transform: translateX(-50%);
 }
-
 
 #yes-btn {
     position: relative;
