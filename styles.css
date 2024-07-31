@@ -77,3 +77,59 @@ button {
     left: 50%;
     transform: translateX(-50%);
 }
+
+
+#start-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+button {
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+}
+
+#no-btn {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#yes-btn {
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+}
