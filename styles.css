@@ -8,31 +8,6 @@ body {
     margin: 0;
 }
 
-.landing-container {
-    text-align: center;
-}
-
-.landing-container h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.landing-container p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-}
-
-#start-btn {
-    padding: 15px 30px;
-    font-size: 18px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background-color: #007BFF;
-    color: white;
-    border-radius: 5px;
-}
-
 .container {
     text-align: center;
     position: relative;
@@ -41,10 +16,13 @@ body {
     border: 2px solid #ccc;
     border-radius: 10px;
     background-color: #fff;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
 button {
@@ -57,17 +35,16 @@ button {
     background-color: #007BFF;
     color: white;
     border-radius: 5px;
+    position: relative;
 }
 
 #no-btn {
     position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.hidden {
-    display: none;
-}
-
-
-#no-btn {
-    position: absolute;
+#yes-btn {
+    position: relative;
 }
