@@ -1,5 +1,12 @@
-const noButton = document.getElementById('no-btn');
+const startButton = document.getElementById('start-btn');
 const container = document.querySelector('.container');
+const landingContainer = document.querySelector('.landing-container');
+const noButton = document.getElementById('no-btn');
+
+startButton.addEventListener('click', function() {
+    landingContainer.classList.add('hidden');
+    container.classList.remove('hidden');
+});
 
 noButton.addEventListener('mouseover', moveNoButton);
 
@@ -27,6 +34,7 @@ function moveNoButton() {
 document.getElementById('yes-btn').addEventListener('click', function() {
     container.innerHTML = `<h1>I knew we were meant to be soulmates🥹</h1>`;
 });
+
 
 
 document.getElementById('yes-btn').addEventListener('click', function() {
