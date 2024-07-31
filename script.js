@@ -28,7 +28,3 @@ document.getElementById('yes-btn').addEventListener('click', function() {
     container.innerHTML = `<h1>I knew we were meant to be soulmates🥹</h1>`;
 });
 
-document.getElementById('yes-btn').addEventListener('click', function() {
-    container.innerHTML = `<h1>I knew we were meant to be soulmates🥹</h1>`;
-});
-
