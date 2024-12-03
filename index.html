@@ -3,19 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lalalalala</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>I'm Sorry 💔</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #ff6f61;
+        }
+        p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        .heart {
+            font-size: 5em;
+            color: #ff6f61;
+            animation: heartbeat 1.5s infinite;
+        }
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.3);
+            }
+        }
+        button {
+            background: #ff6f61;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #e65a50;
+        }
+    </style>
 </head>
 <body>
-    <div class="splash-screen">
-        <h1>Welcome!</h1>
-        <button id="start-btn">Click to Reveal</button>
+    <div>
+        <h1>I’m Sorry 😔</h1>
+        <p>I know I messed up, and it hurts to see us like this. You mean everything to me, and I never want to hurt you. 💔</p>
+        <p>Will you forgive me? 🥺</p>
+        <div class="heart">❤️</div>
+        <br>
+        <button onclick="acceptApology()">Yes, I forgive you! 😊</button>
     </div>
-    <div class="container hidden">
-        <h1>u want us to be together?</h1>
-        <button id="yes-btn">Yes</button>
-        <button id="no-btn">No</button>
-    </div>
-    <script src="script.js"></script>
+    <script>
+        function acceptApology() {
+            alert("You’ve just made my day! I promise to be better for you, always. 🥰");
+            document.body.innerHTML = `
+                <h1>Thank You, My Love! ❤️</h1>
+                <p>Let's create more beautiful memories together! 💕</p>
+                <div class="heart">💖</div>
+            `;
+        }
+    </script>
 </body>
 </html>
