@@ -3,72 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I'm Sorry 💔</title>
+    <title>Forgive Me? 🥺</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
+            text-align: center;
             background: linear-gradient(135deg, #ff9a9e, #fad0c4);
             color: #333;
-            text-align: center;
             padding: 20px;
             margin: 0;
         }
         h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
+            font-size: 2.5em;
+            margin-bottom: 20px;
             color: #ff6f61;
         }
         p {
             font-size: 1.5em;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
-        .heart {
-            font-size: 5em;
-            color: #ff6f61;
-            animation: heartbeat 1.5s infinite;
-        }
-        @keyframes heartbeat {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.3);
-            }
+        .button-container {
+            margin-top: 20px;
         }
         button {
             background: #ff6f61;
-            color: #fff;
+            color: white;
             border: none;
             padding: 15px 30px;
             font-size: 1.2em;
             border-radius: 30px;
             cursor: pointer;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background 0.3s;
+            margin: 10px;
+            transition: transform 0.3s, background 0.3s;
         }
         button:hover {
             background: #e65a50;
         }
+        .no-button {
+            position: absolute;
+        }
     </style>
 </head>
 <body>
-    <div>
-        <h1>I’m Sorry 😔</h1>
-        <p>I know I messed up, and it hurts to see us like this. You mean everything to me, and I never want to hurt you. 💔</p>
-        <p>Will you forgive me? 🥺</p>
-        <div class="heart">❤️</div>
-        <br>
-        <button onclick="acceptApology()">Yes, I forgive you! 😊</button>
+    <h1>I'm Sorry 😔</h1>
+    <p>
+        I know I’ve upset you, and it’s breaking my heart. You mean so much to me, 
+        and I never want to hurt you again. Please forgive me? I promise to make things right. ❤️
+    </p>
+    <div class="button-container">
+        <button onclick="forgiveMe()">Yes, I forgive you 😊</button>
+        <button id="noButton" class="no-button" onmouseover="moveButton()">No 😔</button>
     </div>
+
     <script>
-        function acceptApology() {
-            alert("You’ve just made my day! I promise to be better for you, always. 🥰");
+        const noButton = document.getElementById("noButton");
+
+        function moveButton() {
+            const x = Math.random() * (window.innerWidth - 100);
+            const y = Math.random() * (window.innerHeight - 100);
+            noButton.style.left = `${x}px`;
+            noButton.style.top = `${y}px`;
+        }
+
+        function forgiveMe() {
             document.body.innerHTML = `
                 <h1>Thank You, My Love! ❤️</h1>
-                <p>Let's create more beautiful memories together! 💕</p>
-                <div class="heart">💖</div>
+                <p>You’ve just made my heart so happy. I promise to be better for you, always. 💕</p>
+                <div style="font-size: 5em;">🥰</div>
             `;
         }
     </script>
 </body>
 </html>
+
